@@ -21,16 +21,14 @@ var discount = [
     },
     {
       title: 'Fishes',
-      image: './images/fish.jpeg',
+      image: './images/fish.webp',
       price: '$200'
     },
     {
       title: 'Snakes',
-      image: './images/snakes.jpeg',
+      image: './images/snakes.webp',
       price: '$150'
-    },
-    
-  
+    } 
     
     ]
     
@@ -64,10 +62,10 @@ var discount = [
   
   
   
-    for (var i=0; i < discount.length; i++){
-        var title = '<div class="card m-3"><span><h5 class="text-center">' + discount[i].title + '</h5>'
-        var image = '<img src="discount[i].image"/>'
-        var price = '<p>' + discount.price + '</p></span>'
+    for (var i = 0; i < discount.length; i++){
+        var title = '<div class="card"><h5 class="card-title text-center">' + discount[i].title + '</h5>'
+        var image = '<img src="' + discount[i].image + '"/>'
+        var price = '<div class="card-body"><p>' + discount[i].price + '</p></div></div>'
         var concatThis = title + image + price;
         postHTML = postHTML + concatThis
     }
