@@ -65,7 +65,7 @@ var discount = [
     for (var i = 0; i < discount.length; i++){
         var title = '<div class="card"><h5 class="card-title text-center">' + discount[i].title + '</h5>'
         var image = '<img src="' + discount[i].image + '"/>'
-        var price = '<div class="card-body"><p>' + discount[i].price + '</p></div></div>'
+        var price = '<div class="card-body"><p><button type="button" class="btn btn-dark">' + discount[i].price+ '</button></p></div></div>'
         var concatThis = title + image + price;
         postHTML = postHTML + concatThis
     }
